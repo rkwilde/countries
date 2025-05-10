@@ -62,7 +62,6 @@ cp .env.example .env
 ```
 
 ## Data Model
-*Describe your data model, including tables, fields, and relationships.*
 
 ```sql
 -- Example SQL schema
@@ -88,21 +87,17 @@ pytest tests.py  # just one test so far and not very useful
 ```
 
 ## Design Decisions and Assumptions
-*Explain any important design decisions you made and assumptions about the data or requirements.*\
 N/A
 
 ## Scalability Considerations
-*Discuss how your solution could scale to handle larger volumes of data or additional data sources.*\
 Python and Snowflake both work for big data. Of course what kind of node you run Python on will matter.
 
 ## Error Handling and Logging
-*Explain your approach to error handling and logging.*\
 Tried to have helpful messages for hitting the API. Was rushing by the time I got to the Snowflake uploads so I'm not catching anything there.
 Kept logging very simple.
 
 ## Future Improvements
-*List potential improvements or extensions you would implement with more time.*\
 Actually having scheduling, a pipeline, and testing
 
 ## License
-*Specify your license (e.g., MIT, Apache 2.0)*\
+N/A
