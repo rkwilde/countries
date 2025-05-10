@@ -1,12 +1,10 @@
 # Data Engineering ETL Pipeline Project
 
 ## Project Overview
-*A brief description of what your pipeline does, which API you chose, and why this data is valuable.*
 ingest.py calls the API, saves the data in a file, and uploads it to Snowflake. In Snowflake I have a task that brings the important data into staging.
 I chose the Countries REST API. Valuable if you're interested in geography.
 
 ## Architecture
-*Describe the architecture of your solution. Include a diagram if possible (you can use tools like draw.io, lucidchart, or even a simple image).*
 N/A
 
 ### Components
@@ -86,25 +84,25 @@ CREATE TABLE APTIVE.STAGING.COUNTRIES (
 
 ```bash
 # Run tests
-pytest tests.py  # there's not really anything in there
+pytest tests.py  # just one test so far and not very useful
 ```
 
 ## Design Decisions and Assumptions
-*Explain any important design decisions you made and assumptions about the data or requirements.*
+*Explain any important design decisions you made and assumptions about the data or requirements.*\
 N/A
 
 ## Scalability Considerations
-*Discuss how your solution could scale to handle larger volumes of data or additional data sources.*
+*Discuss how your solution could scale to handle larger volumes of data or additional data sources.*\
 Python and Snowflake both work for big data. Of course what kind of node you run Python on will matter.
 
 ## Error Handling and Logging
-*Explain your approach to error handling and logging.*
+*Explain your approach to error handling and logging.*\
 Tried to have helpful messages for hitting the API. Was rushing by the time I got to the Snowflake uploads so I'm not catching anything there.
 Kept logging very simple.
 
 ## Future Improvements
-*List potential improvements or extensions you would implement with more time.*
+*List potential improvements or extensions you would implement with more time.*\
 Actually having scheduling, a pipeline, and testing
 
 ## License
-*Specify your license (e.g., MIT, Apache 2.0)*
+*Specify your license (e.g., MIT, Apache 2.0)*\
